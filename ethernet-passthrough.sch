@@ -1716,17 +1716,17 @@ Wire Wire Line
 Wire Wire Line
 	9100 6600 9250 6600
 Wire Wire Line
-	9100 6600 8750 6600
+	9100 6600 8800 6600
 Connection ~ 9100 6600
 $Comp
 L power:+5V #PWR?
 U 1 1 60713829
-P 8750 6600
-F 0 "#PWR?" H 8750 6450 50  0001 C CNN
-F 1 "+5V" V 8765 6728 50  0000 L CNN
-F 2 "" H 8750 6600 50  0001 C CNN
-F 3 "" H 8750 6600 50  0001 C CNN
-	1    8750 6600
+P 8650 6600
+F 0 "#PWR?" H 8650 6450 50  0001 C CNN
+F 1 "+5V" V 8665 6728 50  0000 L CNN
+F 2 "" H 8650 6600 50  0001 C CNN
+F 3 "" H 8650 6600 50  0001 C CNN
+	1    8650 6600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1755,4 +1755,31 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-L
 	1    9550 6700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60767109
+P 8800 6750
+F 0 "C?" H 8892 6796 50  0000 L CNN
+F 1 "22u" H 8892 6705 50  0000 L CNN
+F 2 "passive:C_0805" H 8800 6750 50  0001 C CNN
+F 3 "~" H 8800 6750 50  0001 C CNN
+	1    8800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6076710F
+P 8800 6850
+F 0 "#PWR?" H 8800 6600 50  0001 C CNN
+F 1 "GND" V 8805 6722 50  0001 R CNN
+F 2 "" H 8800 6850 50  0001 C CNN
+F 3 "" H 8800 6850 50  0001 C CNN
+	1    8800 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6600 8800 6650
+Connection ~ 8800 6600
+Wire Wire Line
+	8800 6600 8650 6600
 $EndSCHEMATC
