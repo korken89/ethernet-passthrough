@@ -1,6 +1,10 @@
-# Ethernet Passthrough Test
+# Ethernet Pass-through Test
 
+## TODO
 
+* Give Ethernet IC its own clock
+* Add PoE with pass-through?
+* Route board
 
 ## Good links to keep
 
